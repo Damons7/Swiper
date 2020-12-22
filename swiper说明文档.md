@@ -119,7 +119,7 @@
 
     ```js
     size:1.3 //取值（1-2）为放大比例，供location:'super-top'使用，其他不建议使用
-    size:1.3 //取值（0-1）为缩小比例，供location:'super-bottom',使用，其他不建议使用
+    size:0.7 //取值（0-1）为缩小比例，供location:'super-bottom',使用，其他不建议使用
     ```
 
     
