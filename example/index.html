@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper</title>
+    <link rel="stylesheet" href="../css/swiper.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <script src="../js/swiper.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .yourDiv {
+            width: 1200px;
+            height: 365px;
+            margin: 200px auto 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="yourDiv">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <img src="image/01.jpg">
+                <img src="image/02.jpg">
+                <img src="image/03.jpg">
+                <img src="image/04.jpg">
+                <img src="image/05.jpg">
+                <img src="image/06.jpg">
+                <img src="image/07.jpg">
+            </div>
+
+            <!-- 假如底部需要导航按钮，则在类swiper-wraer后面添加类swiper-bottom -->
+            <div class="swiper-bottom"></div>
+
+            <!-- 添加左右按钮 -->
+
+            <i class="swiper-button-prev iconfont icon-zuo1"></i>
+            <i class="swiper-button-next iconfont icon-you1"></i>
+        </div>
+    </div>
+
+    <script>
+
+        let mySwiper = new Swiper('.swiper-container', {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+
+            //主图片配置
+            image: {
+                location: 'center',
+                opacity: 0.8,
+            },
+
+            //底部导航样式
+            'bottom': {
+                type: 'circle'
+            },
+            swiperTime:true
+ 
+        });
+       
+
+    </script>
+</body>
+
+</html>
